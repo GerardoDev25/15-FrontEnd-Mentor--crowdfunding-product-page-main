@@ -1,0 +1,243 @@
+/* ************************************* */
+/* ? ************* General ************* */
+/* ************************************* */
+
+:root {
+   /* ## Colors */
+   /* ### Primary */
+   --Moderate-cyan: hsl(176, 50%, 47%);
+   --Dark-cyan: hsl(176, 72%, 28%);
+   /* ### Neutral */
+   --Black: hsl(0, 0%, 0%);
+   --Dark-gray: hsl(0, 0%, 48%);
+
+   font-family: "Commissioner", sans-serif;
+}
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+html,
+body {
+   height: auto;
+}
+
+.header,
+.main {
+   min-width: 375px;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+/* ************************************* */
+/* ? ************* header ************* */
+/* ************************************* */
+
+.header {
+   background-image: url("../images/image-hero-mobile.jpg");
+   background-size: cover;
+   background-position: center;
+
+   padding-top: 2.2rem;
+
+   height: 22rem;
+}
+
+/* ************************************* */
+/* ? *************** nav *************** */
+.nav {
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav-logo,
+.nav-icon {
+   cursor: pointer;
+}
+
+/* ? ************* nav-icon ************* */
+
+.nav-icon {
+   width: 16px;
+   height: 15px;
+   background-image: url("../images/icon-hamburger.svg");
+}
+
+/* ? ************* nav-list ************* */
+
+.nav-list {
+   display: none;
+}
+
+/* ************************************* */
+/* ? ************** main ************** */
+/* ************************************* */
+
+.main {
+   background-color: #eee;
+}
+.container {
+   position: relative;
+   top: -4rem;
+   text-align: center;
+}
+.box {
+   margin-top: 1.5rem;
+   border-radius: 0.5rem;
+   background-color: white;
+   padding-left: 0.9rem;
+   padding-right: 0.9rem;
+}
+
+.text-paragraph {
+   color: var(--Dark-gray);
+   line-height: 170%;
+   font-size: 0.9rem;
+   padding-bottom: 1rem;
+}
+
+.btn {
+   background-color: var(--Moderate-cyan);
+   padding: 1rem 2rem;
+   border-radius: 2rem;
+   color: white;
+   font-weight: 500;
+   border: none;
+}
+
+/* ************************************* */
+/* ? *************** top *************** */
+.top {
+   position: relative;
+}
+
+.top__logo {
+   position: relative;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   top: -28px;
+}
+
+.top__title {
+   margin-top: 0;
+   font-size: 1.5rem;
+   font-weight: 900;
+}
+
+.top__btns {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 2rem;
+}
+
+.top__btn {
+   width: 14rem;
+}
+.top__bookmark {
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: black;
+}
+
+.fa-bookmark {
+   color: var(--Dark-gray);
+}
+
+.bookmark {
+   display: none;
+}
+
+/* ************************************* */
+/* ? ************* middle ************* */
+
+.miiddle__top {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 2rem;
+}
+
+.middle__text {
+   margin-left: auto;
+   margin-right: auto;
+   width: 10rem;
+   line-height: 300%;
+   border-bottom: 1px solid var(--Dark-gray);
+}
+
+.miiddle__taext-none {
+   border: none;
+}
+
+.middle__number {
+   display: block;
+   font-size: 2rem;
+   color: black;
+}
+
+.middle__progress {
+   width: 100%;
+   background-color: #eee;
+   border-radius: 1rem;
+   height: 1rem;
+   position: relative;
+}
+
+.middle__progress::before {
+   content: "";
+   display: block;
+   height: 100%;
+   width: 80%;
+   background-color: var(--Moderate-cyan);
+   border-radius: 1rem;
+}
+
+/* ************************************* */
+/* ? ************** down ************** */
+.down {
+   text-align: left;
+}
+
+.down-top {
+   padding-top: 2rem;
+}
+
+.down-cards {
+   padding-bottom: 2rem;
+}
+.card {
+   margin-top: 2rem;
+   border: 2px solid #eee;
+   padding: 1rem;
+   border-radius: 0.5rem;
+}
+
+.card__price {
+   color: var(--Moderate-cyan);
+   font-weight: 500;
+}
+.card__left {
+   color: var(--Dark-gray);
+   word-spacing: 0.5rem;
+}
+.card__number {
+   color: black;
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.card-desable {
+   opacity: 0.5;
+}
+
+.card__btn-disable {
+   background-color: var(--Dark-gray);
+}
