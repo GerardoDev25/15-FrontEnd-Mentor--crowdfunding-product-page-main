@@ -22,6 +22,7 @@
 html,
 body {
    height: auto;
+   max-height: 2868px;
 }
 
 .header,
@@ -65,10 +66,82 @@ body {
    background-image: url("../images/icon-hamburger.svg");
 }
 
+.nav-icon-hidden {
+   visibility: hidden;
+}
+
 /* ? ************* nav-list ************* */
 
 .nav-list {
    display: none;
+   margin: 0;
+   padding: 0;
+   outline: 2px dotted blueviolet;
+   position: fixed;
+   background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+   );
+   z-index: 1000;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   list-style: none;
+}
+
+.nav-list-block {
+   display: block;
+}
+
+.nav-list__icon {
+   width: 18px;
+   height: 17px;
+   margin-left: auto;
+   margin-top: 2rem;
+   margin-right: 2rem;
+   background-image: url("../images/icon-close-menu.svg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.nav-list__container {
+   background-color: white;
+
+   margin-top: 3rem;
+   margin-left: auto;
+   margin-right: auto;
+
+   width: 80%;
+   height: 17rem;
+
+   border-radius: 0.5rem;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.nav-list__item {
+   padding-left: 2rem;
+   display: flex;
+   height: 33%;
+   width: 100%;
+   border-bottom: 1px solid hsla(0, 0%, 48%, 0.6);
+   display: flex;
+   align-items: center;
+}
+
+.nav-list__link {
+   display: block;
+   width: 100%;
+   height: 100%;
+   padding-top: 2rem;
+   color: black;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 1.1rem;
 }
 
 /* ************************************* */
@@ -105,6 +178,7 @@ body {
    color: white;
    font-weight: 500;
    border: none;
+   cursor: pointer;
 }
 
 /* ************************************* */
@@ -240,4 +314,118 @@ body {
 
 .card__btn-disable {
    background-color: var(--Dark-gray);
+}
+
+/* ************************************* */
+/* ? ************* Modals ************* */
+/* ************************************* */
+
+.modals {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   height: 2868px;
+   background-color: rgba(0, 0, 0, 0.3);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-box {
+   background-color: white;
+   width: 85%;
+   border-radius: 0.5rem;
+   padding: 1.5rem;
+}
+/* .modal-default {
+   background-color: white;
+   width: 85%;
+} */
+
+.modal-card {
+   height: auto;
+   border: 2px solid rgba(200, 200, 200, 0.7);
+   border-radius: 0.5rem;
+   padding: 1.5rem;
+   padding-right: 0.9rem;
+   margin-bottom: 2.5rem;
+}
+
+.modal-default__head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.modal-card__title {
+   font-size: 1.1rem;
+}
+.modal-card__price {
+   color: var(--Moderate-cyan);
+   font-weight: 600;
+}
+
+.modal-default__icon {
+   background-image: url("../images/icon-close-modal.svg");
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 15px;
+   height: 15px;
+}
+
+.modal-card__head {
+   display: flex;
+   align-items: center;
+}
+
+.modal-checkout {
+   margin-right: 1rem;
+}
+
+.modal-checkout__input {
+   display: none;
+}
+
+.modal-checkout__label {
+   height: 1.6rem;
+   width: 1.6rem;
+   display: block;
+   border-radius: 50%;
+   border: 3px solid rgba(200, 200, 200, 0.7);
+   position: relative;
+}
+
+.modal-checkout__input:checked + .modal-checkout__label::before {
+   content: "";
+   display: block;
+   top: calc(50% - 0.5rem);
+   left: calc(50% - 0.5rem);
+   border-radius: 50%;
+   width: 1rem;
+   height: 1rem;
+   position: absolute;
+   background-color: var(--Moderate-cyan);
+}
+
+
+/* 
+.modal-checkout__input:checked + .modal-checkout__label::before {
+   background-color: var(--Moderate-cyan);
+} */
+
+.modal-checkout__input:checked + .modal-checkout__label {
+   border: 3px solid var(--Moderate-cyan);
+}
+
+.modal-card__paragraph {
+   padding-bottom: 0;
+}
+.modal-card__number {
+   color: black;
+   font-size: 1.2rem;
+   margin-right: 0.3rem;
+}
+.modal-card__footer {
+   margin-bottom: 0;
 }
