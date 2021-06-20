@@ -197,7 +197,7 @@
                </div>
 
                <!-- ? ************ down-cards ************  -->
-               <div class="down-cards">
+               <div class="down-cards" id="down-cards">
                   <!-- ?card -->
                   <div class="card">
                      <div class="card-header">
@@ -293,8 +293,20 @@
             </div>
          </div>
       </main>
-      <div class="modals">
-         <form class="modal-default modal-box">
+
+      <!-- *************************************  -->
+      <!-- ? ************** modals **************  -->
+      <!-- *************************************  -->
+      <!-- modals-none -->
+      <div class="modals modals-none" id="modals">
+         <!-- *************************************  -->
+         <!-- ? ********** modal-default **********  -->
+
+         <!-- modal-default-none -->
+         <div
+            class="modal-default modal-box modal-default-none"
+            id="modal-default"
+         >
             <div class="modal-default__header">
                <div class="modal-default__head">
                   <h2 class="modal-default__title">
@@ -309,8 +321,9 @@
                   Bamboo Monitor Riser out in the world?
                </p>
             </div>
+
             <div class="modal-default__body">
-               <!-- ? card modal -->
+               <!-- ? card modal 1 -->
                <div class="modal-card">
                   <div class="modal-card__head">
                      <div class="modal-checkout">
@@ -340,7 +353,7 @@
                   </p>
                </div>
 
-               <!-- ? card modal -->
+               <!-- ? card modal 2 -->
 
                <div class="modal-card">
                   <div class="modal-card__head">
@@ -381,8 +394,27 @@
                      </strong>
                      left
                   </p>
+
+                  <div class="modal-footer">
+                     <h3
+                        class="
+                           text-paragraph
+                           modal-footer__title
+                        "
+                     >
+                        Enter your pledge
+                     </h3>
+                     <div class="modal-footer__down">
+                        <div class="modal-footer__price">
+                           <p class="modal-footer__number">25</p>
+                        </div>
+                        <button class="btn modal-footer__btn">
+                           Continue
+                        </button>
+                     </div>
+                  </div>
                </div>
-               <!-- ? card modal -->
+               <!-- ? card modal 3 -->
 
                <div class="modal-card">
                   <div class="modal-card__head">
@@ -422,8 +454,27 @@
                      </strong>
                      left
                   </p>
+
+                  <div class="modal-footer">
+                     <h3
+                        class="
+                           text-paragraph
+                           modal-footer__title
+                        "
+                     >
+                        Enter your pledge
+                     </h3>
+                     <div class="modal-footer__down">
+                        <div class="modal-footer__price">
+                           <p class="modal-footer__number">75</p>
+                        </div>
+                        <button class="btn modal-footer__btn">
+                           Continue
+                        </button>
+                     </div>
+                  </div>
                </div>
-               <!-- ? card modal -->
+               <!-- ? card modal 4 -->
 
                <div class="modal-card card-desable">
                   <div class="modal-card__head">
@@ -465,41 +516,34 @@
                   </p>
                </div>
             </div>
-         </form>
+         </div>
+
+         <!-- modal-success-none -->
+         <div
+            class="modal-success modal-success-none"
+            id="modal-success"
+         >
+            <div class="modal-success__container">
+               <div class="modal-success-header">
+                  <div class="modal-success__icon"></div>
+                  <div class="modal-success__title">
+                     Thanks for your support!
+                  </div>
+               </div>
+               <p
+                  class="modal-success__paragraph text-paragraph"
+               >
+                  Your pledge brings us one step closer to
+                  sharing Mastercraft Bamboo Monitor Riser
+                  worldwide. You will get an email once our
+                  campaign is completed.
+               </p>
+               <button class="btn modal-success__btn">
+                  Got it!
+               </button>
+            </div>
+         </div>
       </div>
-      <!-- ? -->
-      <!-- ?Selection modal start -->
-      <!-- ?Selected pledge start -->
-      <!-- Enter your pledge
-  $25
-  Continue -->
-      <!--? Selected pledge end -->
-      <!---->
-
-      <!-- ?Selected pledge start -->
-      <!-- Enter your pledge
-  $75
-  Continue -->
-      <!-- ? Selected pledge end -->
-      <!---->
-
-      <!-- ? Selected pledge  start -->
-      <!-- Enter your pledge
-  $200
-  Continue -->
-      <!--? Selected pledge end -->
-
-      <!--? Selection modal end -->
-
-      <!--? Success modal start -->
-
-      <!-- Thanks for your support!
-  Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-  an email once our campaign is completed.
-  Got it!
-
-  Success modal end -->
-
       <script src="script.js"></script>
    </body>
 </html>
