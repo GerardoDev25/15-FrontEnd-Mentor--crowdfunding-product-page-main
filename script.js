@@ -19,18 +19,19 @@ const downCards = document.getElementById("down-cards");
 const modalDefault = document.getElementById("modal-default");
 const modalSuccess = document.getElementById("modal-success");
 
+// ? Bookmark
+const topBookmark = document.getElementById("top__bookmark");
+const topIcon = document.getElementById("top__icon");
+
 // ? modal card 2
-// const label2 = document.getElementById("label2");
 const modalCard2 = document.getElementById("modal-card-2");
 const radioModal2 = document.getElementById("radioModal2");
 const modalFooter2 = document.getElementById("modal-footer-2");
 
 // ? modal card 3
-// const label3 = document.getElementById("label3");
 const modalCard3 = document.getElementById("modal-card-3");
 const radioModal3 = document.getElementById("radioModal3");
 const modalFooter3 = document.getElementById("modal-footer-3");
-
 
 // *************************************
 // ? ********* Show/Hiden Menu *********
@@ -103,6 +104,15 @@ navList.addEventListener("click", (e) => {
    ) {
       hiddenMenu();
    }
+});
+
+// *************************************
+// ? ****** Show/Hidden Bookmark ******
+// *************************************
+
+topBookmark.addEventListener("click", () => {
+   topBookmark.classList.toggle("top__bookmark-select");
+   topIcon.classList.toggle("top__icon-select");
 });
 
 // *************************************

@@ -110,8 +110,10 @@
                   <button class="btn top__btn">
                      Back this project
                   </button>
-                  <div class="top__bookmark">
-                     <i class="fas fa-bookmark"></i>
+                  <div class="top__bookmark" id="top__bookmark">
+                     <div class="top__icon" id="top__icon">
+                        <i class="fas fa-bookmark"></i>
+                     </div>
                      <p class="bookmark">Bookmark</p>
                   </div>
                </div>
@@ -356,44 +358,51 @@
                <!-- ? card modal 2 -->
                <!-- checked -->
                <div class="modal-card" id="modal-card-2">
-                  <div class="modal-card__head">
-                     <div class="modal-checkout">
-                        <input
-                           class="modal-checkout__input"
-                           type="radio"
-                           name="modalCheckout"
-                           id="radioModal2"
-                        />
-                        <label
-                           class="modal-checkout__label"
-                           for="
+                  <div class="modal-card__top">
+                     <div class="modal-card__head">
+                        <div class="modal-checkout">
+                           <input
+                              class="modal-checkout__input"
+                              type="radio"
+                              name="modalCheckout"
+                              id="radioModal2"
+                           />
+                           <label
+                              class="modal-checkout__label"
+                              for="
                            radioModal2"
-                           id="label2"
-                        ></label>
+                              id="label2"
+                           ></label>
+                        </div>
+                        <div class="modal-card__header">
+                           <h3 class="modal-card__title">
+                              Bamboo Stand
+                           </h3>
+                           <p class="modal-card__price">
+                              Pledge $25 or more
+                           </p>
+                        </div>
                      </div>
-                     <div class="modal-card__header">
-                        <h3 class="modal-card__title">
-                           Bamboo Stand
-                        </h3>
-                        <p class="modal-card__price">
-                           Pledge $25 or more
-                        </p>
-                     </div>
+                     <p
+                        class="
+                           modal-card__paragraph
+                           text-paragraph
+                        "
+                     >
+                        You get an ergonomic stand made of
+                        natural bamboo. You've helped us launch
+                        our promotional campaign, and you’ll be
+                        added to a special Backer member list.
+                     </p>
+                     <p
+                        class="modal-card__footer text-paragraph"
+                     >
+                        <strong class="modal-card__number">
+                           101
+                        </strong>
+                        left
+                     </p>
                   </div>
-                  <p
-                     class="modal-card__paragraph text-paragraph"
-                  >
-                     You get an ergonomic stand made of natural
-                     bamboo. You've helped us launch our
-                     promotional campaign, and you’ll be added to
-                     a special Backer member list.
-                  </p>
-                  <p class="modal-card__footer text-paragraph">
-                     <strong class="modal-card__number">
-                        101
-                     </strong>
-                     left
-                  </p>
 
                   <div
                      class="modal-footer modal-footer-none"
@@ -420,45 +429,51 @@
                <!-- ? card modal 3 -->
 
                <div class="modal-card" id="modal-card-3">
-                  <div class="modal-card__head">
-                     <div class="modal-checkout">
-                        <input
-                           class="modal-checkout__input"
-                           type="radio"
-                           name="modalCheckout"
-                           id="radioModal3"
-                        />
-                        <label
-                           class="modal-checkout__label"
-                           for="
+                  <div class="modal-card__top">
+                     <div class="modal-card__head">
+                        <div class="modal-checkout">
+                           <input
+                              class="modal-checkout__input"
+                              type="radio"
+                              name="modalCheckout"
+                              id="radioModal3"
+                           />
+                           <label
+                              class="modal-checkout__label"
+                              for="
                            radioModal3"
-                           id="label3"
-                        ></label>
+                              id="label3"
+                           ></label>
+                        </div>
+                        <div class="modal-card__header">
+                           <h3 class="modal-card__title">
+                              Black Edition Stand
+                           </h3>
+                           <p class="modal-card__price">
+                              Pledge $75 or more
+                           </p>
+                        </div>
                      </div>
-                     <div class="modal-card__header">
-                        <h3 class="modal-card__title">
-                           Black Edition Stand
-                        </h3>
-                        <p class="modal-card__price">
-                           Pledge $75 or more
-                        </p>
-                     </div>
+                     <p
+                        class="
+                           modal-card__paragraph
+                           text-paragraph
+                        "
+                     >
+                        You get a Black Special Edition computer
+                        stand and a personal thank you. You’ll be
+                        added to our Backer member list. Shipping
+                        is included.
+                     </p>
+                     <p
+                        class="modal-card__footer text-paragraph"
+                     >
+                        <strong class="modal-card__number">
+                           64
+                        </strong>
+                        left
+                     </p>
                   </div>
-                  <p
-                     class="modal-card__paragraph text-paragraph"
-                  >
-                     You get a Black Special Edition computer
-                     stand and a personal thank you. You’ll be
-                     added to our Backer member list. Shipping is
-                     included.
-                  </p>
-                  <p class="modal-card__footer text-paragraph">
-                     <strong class="modal-card__number">
-                        64
-                     </strong>
-                     left
-                  </p>
-
                   <div
                      class="modal-footer modal-footer-none"
                      id="modal-footer-3"
@@ -525,7 +540,7 @@
             </div>
          </div>
 
-         <!-- modal-success-none -->
+         <!-- ? modal-success-none -->
          <div
             class="modal-success modal-success-none"
             id="modal-success"
