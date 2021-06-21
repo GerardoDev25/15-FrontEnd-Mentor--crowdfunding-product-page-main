@@ -28,7 +28,7 @@ body {
 
 .header,
 .main {
-   min-width: 375px;
+   /* min-width: 375px; */
    padding-left: 2rem;
    padding-right: 2rem;
 }
@@ -364,6 +364,10 @@ body {
    margin-bottom: 2.5rem;
 }
 
+.modal-card-selected {
+   border: 2px solid var(--Moderate-cyan);
+}
+
 .modal-default__head {
    display: flex;
    justify-content: space-between;
@@ -447,6 +451,10 @@ body {
    height: auto;
 
    border-top: 3px solid rgba(200, 200, 200, 0.7);
+}
+
+.modal-footer-none {
+   display: none;
 }
 
 .modal-footer__title {
